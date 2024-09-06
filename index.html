@@ -3,10 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+    <title>Holiday Countdown</title>
 </head>
 <body>
-    <button id="sharebutton">Share</button>
-    <script src="script.js"></script>
+    <h1>Ready for a Holiday?</h1>
+    <h2>
+        <div class="countdown">
+        <div class="time" id="days">
+            <span class="label">Days</span>
+        </div>
+        <div class="time" id="hours">
+            <span class="label">Hours</span>
+        </div>
+        <div class="time" id="minutes">
+            <span class="label">Minutes</span>
+        </div>
+        <div class="time" id="seconds">
+            <span class="label">Seconds</span>
+        </div>
+    </div>
+    </h2>
+
+    <div id="countdown">
+        <h1>Countdown to Christmas</h1>
+        <div id="timer">
+            <span id="days"></span> days 
+            <span id="hours"></span> hours 
+            <span id="minutes"></span> minutes 
+            <span id="seconds"></span> seconds
+        </div>
+    </div>
+    <script src="timeline.js"></script>    
+    <script src="share.js"></script>    
+
+
 </body>
 </html>

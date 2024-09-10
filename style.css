@@ -4,15 +4,38 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #818998;
+    background-color: white;
     color: black;
     margin: 0;
 }
 
-#countdown {
-    text-align: center;
+hl {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: black;
 }
 
-#timer {
+.countdown {
+    text-align: center;
+    background-color: rgb(238, 215, 174);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    gap: 10xp;
+    font-size: 2em;
+    color: black;
+}
+
+.time div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span {
     font-size: 2em;
 }

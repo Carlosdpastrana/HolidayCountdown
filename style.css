@@ -39,3 +39,15 @@ hl {
 span {
     font-size: 2em;
 }
+
+#shareButton{
+    position: fixed;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    bottom: 1px;
+    right: 1px;
+    font-size: 26px;
+    height: 50px;
+    width: 50px;
+}

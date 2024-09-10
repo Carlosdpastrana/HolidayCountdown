@@ -16,12 +16,27 @@ hl {
 }
 
 .countdown {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    gap: 20px; /* Adds space between the items */
     text-align: center;
     background-color: rgb(238, 215, 174);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
+       
+    }
+    
+    .time {
+        text-align: center;
+    }
+    
+    .time span.label {
+        display: block;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
 
 .time {
     display: flex;
@@ -38,4 +53,16 @@ hl {
 }
 span {
     font-size: 2em;
+}
+
+#shareButton{
+    position: fixed;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    bottom: 1px;
+    right: 1px;
+    font-size: 26px;
+    height: 50px;
+    width: 50px;
 }

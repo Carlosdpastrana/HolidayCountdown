@@ -1,6 +1,12 @@
+const countdownButton = document.getElementById('start-countdown');
+
+// variable to hold the countdown interval ID so we can stop it later
+// if we want to.
+let countdownInterval;
+
 function updateCountdown() {
     const now = new Date();
-    const nextHalloween = new Date(now.getFullYear(), 11, 25); // October 31st of the current year
+    const nextHalloween = new Date(now.getFullYear(), 9, 31); // October 31st of the current year
 
     // If Halloween has already passed this year, set the date to next year's Halloween
     if (now > nextHalloween) {
@@ -20,8 +26,15 @@ function updateCountdown() {
     document.getElementById('seconds').textContent = seconds;
 }
 
-// Update the countdown every second
-setInterval(updateCountdown, 1000);
+countdownButton.addEventListener('click', function() {
+    if (!countdownInterval) {
+        updateCountdown();
+        countdownInterval = setInterval(updateCountdown, 1000);
+    }
+});
 
-// Initial call to display the countdown immediately
-updateCountdown();
+// // Update the countdown every second
+// setInterval(updateCountdown, 1000);
+
+// // Initial call to display the countdown immediately
+// updateCountdown();

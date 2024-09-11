@@ -1,13 +1,13 @@
 function updateCountdown() {
     const now = new Date();
-    const nextChristmas = new Date(now.getFullYear(), 11, 25); // December 25 of the current year
+    const nextHalloween = new Date(now.getFullYear(), 11, 25); // October 31st of the current year
 
-    // If Christmas has already passed this year, set the date to next year's Christmas
-    if (now > nextChristmas) {
-        nextChristmas.setFullYear(nextChristmas.getFullYear() + 1);
+    // If Halloween has already passed this year, set the date to next year's Halloween
+    if (now > nextHalloween) {
+        nextHalloween.setFullYear(nextHalloween.getFullYear() + 1);
     }
 
-    const diff = nextChristmas - now;
+    const diff = nextHalloween - now;
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

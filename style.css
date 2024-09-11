@@ -1,12 +1,20 @@
 body {
     font-family: Arial, sans-serif;
+    height: 100vh; /* Full viewport height */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: white;
-    color: black;
-    margin: 0;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+header{
+    font-size: large;
+    color: white;
+    background-image: ;
+    width: 900px;
+    height: 141px;
 }
 
 hl {
@@ -22,9 +30,11 @@ hl {
     text-align: center;
     background-color: rgb(238, 215, 174);
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-       
+    padding-top: 80px;
+    border-radius: 125px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 900px;
+    height: 141px;
     }
     
     .time {
@@ -53,6 +63,7 @@ hl {
 }
 span {
     font-size: 2em;
+    font-weight: bold;
 }
 
 #shareButton{
@@ -66,5 +77,3 @@ span {
     height: 50px;
     width: 50px;
 }
-
-/* Test */ 

@@ -10,10 +10,23 @@
 </head>
 
 <body>
+   <header>
     <h1>Ready for a Holiday?</h1>
     <p>With our advanced techology, all you have to do is type in a holiday,<br>
          and we'll tell you how many days, hour, minutes, and seconds.</p>
-    <h2>
+    </header> 
+
+    
+        <!--Dropdown Menu for Selectiong Holiday-->
+        <div class="holiday-selector">
+            <lable for="holiday">Choose a holiday:</lable>
+            <select id="holiday">
+                <option value="halloween" Halloween></option>
+            </select>
+            <button id="start-countdown">Start Countdown</button>
+        </div>
+        <!-- Countdown and Time lable-->
+    <section>
         <div class="countdown">
             <div class="time">
                 <span id="days">0</span>
@@ -32,17 +45,13 @@
                 <span class="label">Seconds</span>
             </div>
         </div>
-    </h2>
-
+    </section>
 
     <button id="shareButton">&#10154;</button>
 
-    <div id="countdown">
-        <h1>Countdown to Christmas</h1>
-    </div>
-    <script src="timeline.js"></script>    
-    <script src="share.js"></script>    
+        <script src="timeline.js"></script>
+        <script src="share.js"></script>
 
-
+    
 </body>
 </html>

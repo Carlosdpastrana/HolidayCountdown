@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
     <title>Holiday Countdown</title>
 </head>
 
 <body>
+   <header>
+    <h1>Ready for a Holiday?</h1>
+    <p>With our advanced techology, all you have to do is type in a holiday,<br>
+         and we'll tell you how many days, hour, minutes, and seconds.</p>
+    </header> 
 
-    <header>
-        <h1>Ready for a Holiday?</h1>
-        <img src="link to image" alt="discribe img">
-        <p>All you have to do is choose a holiday,<br>
-            and we'll tell you how much time is left to the very last second.</p>
 
         <!--Dropdown Menu for Selectiong Holiday-->
         <div class="holiday-selector">
@@ -26,19 +26,7 @@
             <button id="start-countdown">Start Countdown</button>
         </div>
         <!-- Countdown and Time lable-->
-        <h2>
-            <div class="countdown">
-                <h2> Countdown to Halloween</h2>
-                <div class="time" id="days"><span class="label">Days</span></div>
-                <div class="time" id="hours"><span class="label">Hours</span></div>
-                <div class="time" id="minutes"><span class="label">Minutes</span></div>
-                <div class="time" id="seconds"><span class="label">Seconds</span></div>
-                <div id="countdown">
-
-    <h1>Ready for a Holiday?</h1>
-    <p>With our advanced techology, all you have to do is type in a holiday,<br>
-         and we'll tell you how many days, hour, minutes, and seconds.</p>
-    <h2>
+    <section>
         <div class="countdown">
             <div class="time">
                 <span id="days">0</span>
@@ -57,34 +45,13 @@
                 <span class="label">Seconds</span>
             </div>
         </div>
-    </h2>
+    </section>
 
-
-    <button id="shareButton">&#10154;</button>
-
-    <div id="countdown">
-        <h1>Countdown to Christmas</h1>
-    </div>
-    <script src="timeline.js"></script>    
-    <script src="share.js"></script>    
-
-
-                    <div id="timer">
-                        <span id="days"></span> Days
-                        <span id="hours"></span> Hours
-                        <span id="minutes"></span> Minutes
-                        <span id="seconds"></span> Seconds
-                    </div>
-                </div>
-        </h2>
+    <button id="shareButton">SHARE</button>
 
         <script src="timeline.js"></script>
         <script src="share.js"></script>
 
-        <button id="shareButton">Share</button>
-    </header>
+    
 </body>
-
-</html>
-
 </html>

@@ -1,28 +1,45 @@
+:root {
+    --halloween-font: 'Outfit', sans-serif; color: #403d39;
+    --primary-color: 
+}
 
 body {
     margin: 0px;
     padding: 0px;
-    font-family: Arial, sans-serif;
+    font-family: var(--halloween-font);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: #fffcf2;
 }
 
-header > h1{
-    text-align: left;
+
+
+/* Initial state of the h1 text */
+header > h1 {
+    font-family: var(--halloween-font);
     font-size: 130px;
     padding: 50px;
-    font-family:'Times New Roman', Times, serif;
     margin: 45px;
+    text-align: left;
+    position: relative;
+    
+    /* Starting position: off-screen */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out, opacity 1s ease-out; /* Smooth slide in */
+}
 
+/* When the class 'visible' is added, the h1 text slides in */
+header > h1.visible {
+    opacity: 1;
+    transform: translateX(0); /* Slides the h1 back to its normal position */
 }
 header{
     font-size: large;
-    color: white;
+    color: #fffcf2;
     background-image: url(img/halloween.jpg);
     background-size: cover;
     background-position-x: center;
@@ -36,70 +53,74 @@ header{
     top: 0px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 849px) {
     header, header h1 {
         height: 300px;
-        font-size: medium;
+        font-size: 50px;
+
     }
 }
 
+div.paragraph{
+    padding: 10px;
+    margin: 23px;
+    align-items: left;
+    font-size: 35px;
+    text-align: center;
 
-.holidaySelector{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
+}
+
+.container{
     padding: 20px;
-    background-color: rgba(255, 238, 228, 0.59);
+    background-color: #ccc5b9;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 500px;
     margin: 20px auto;
     gap: 31px;
-}
-
-label{ 
-    font-family: cursive;
+    font-family: var(--halloween-font);
     font-weight: bold;
 }
-select{
+
+
+
+.col{
+    font-family: var(--halloween-font);
+    font-weight: bold;
     padding: 10px;
     font-size: 1rem;
-    border: 2px solid #ddd;
+    border-color: black;
     border-radius: 5px;
     outline: none;
     width: 100%;
     margin-bottom: 20px;
 }
 
-button {
+#start-countdown{
     padding: 10px 20px;
     font-size: 1rem;
-    background-color:rgb(238, 215, 174) ;
-    color: white;
+    background-color: #403d39;
+    color: #fffcf2;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color:rgba(250, 94, 0, 1) ;
+#start-countdown:hover {
+    background-color:rgba(250, 94, 0, 1);
+    border: none;
 }
 
 
-.countdown {
-    display: flex;
-    justify-content: center; /* Centers the items horizontally */
-    gap: 20px; /* Adds space between the items */
+.container-countdown {
     text-align: center;
-    background-color: rgb(238, 215, 174);
+    background-color: #252422;
     padding: 20px;
-    padding-top: 80px;
     border-radius: 125px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    width: 900px;
-    height: 141px;
+     font-family: var(--halloween-font);
+    font-weight: bold;
+    color: #fffcf2;
     }
     
     .time {
@@ -116,9 +137,9 @@ button:hover {
 .time {
     display: flex;
     justify-content: center;
-    gap: 10xp;
+    gap: 10px;
     font-size: 2em;
-    color: black;
+    color: #fffcf2;
 }
 
 .time div {
@@ -134,12 +155,17 @@ span {
 #shareButton{
     position: fixed;
     border-radius: 100px;
-    background-color: rgb(238, 215, 174);
-    color: black;
+    background-color: #252422;
+    color: #fffcf2;
     bottom: 1px;
     right: 45px;
     font-size: 40px;
     width: 200px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--halloween-font);
+}
+#shareButton:hover{
+
+background-color:rgba(250, 94, 0, 1);
+border: none;
 }

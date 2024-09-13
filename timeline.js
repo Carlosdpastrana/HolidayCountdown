@@ -88,3 +88,8 @@ dateInput.addEventListener('change', function (event) {
   month = monthValue
   day = dayValue
 });
+
+window.addEventListener('load', function() {
+    const headerH1 = document.querySelector('header > h1');
+    headerH1.classList.add('visible');
+});

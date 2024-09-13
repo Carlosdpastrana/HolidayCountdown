@@ -39,7 +39,7 @@ header > h1.visible {
 }
 header{
     font-size: large;
-    color: #fffcf2;
+    color: #000000;
     background-image: url(img/holiday.jpg);
     background-size: cover;
     background-position-x: center;
@@ -58,6 +58,7 @@ header{
         height: 300px;
         font-size: 50px;
 
+
     }
 }
 
@@ -65,7 +66,7 @@ div.paragraph{
     padding: 10px;
     margin: 23px;
     align-items: left;
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
 
 }

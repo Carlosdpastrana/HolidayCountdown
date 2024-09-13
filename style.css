@@ -110,7 +110,14 @@ input[type="date"] {
     color: #F0F0F0;
     border: none;
 }
-
+@media (max-width: 768px) {
+    input[type="date"], #start-countdown {
+        width: 100%; /* Make the inputs/buttons full-width */
+        height: 50px;
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+}
 
 .container-countdown {
     text-align: center;
@@ -124,6 +131,19 @@ input[type="date"] {
     font-size: 1rem;
     margin:  27px;
     opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+        .container-countdown {
+            width: 90%; /* Make it almost full-width */
+            padding: 30px 10px; /* Reduce padding */
+            border-radius: 100px; /* Reduce border-radius for smaller screens */
+        }
+    
+        .time {
+            font-size: 1.5em; /* Reduce the size of countdown numbers */
+            gap: 5px; /* Reduce the gap between countdown items */
+        }
     }
     
     .time {
@@ -169,6 +189,16 @@ span {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     font-family: var(--halloween-font);
 }
+
+@media (max-width: 768px) {
+    #shareButton {
+        width: 150px; /* Make it smaller */
+        font-size: 1.2rem;
+        bottom: 10px;
+        right: 10px; /* Adjust positioning */
+    }
+}
+
 #shareButton:hover{
 
 background-color:#000000;

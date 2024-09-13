@@ -40,7 +40,7 @@ header > h1.visible {
 header{
     font-size: large;
     color: #fffcf2;
-    background-image: url(img/halloween.jpg);
+    background-image: url(img/holiday.jpg);
     background-size: cover;
     background-position-x: center;
     width: 100%;
@@ -107,7 +107,7 @@ div.paragraph{
 }
 
 #start-countdown:hover {
-    background-color:rgba(250, 94, 0, 1);
+    background-color:rgb(143, 106, 82);
     border: none;
 }
 
@@ -172,4 +172,8 @@ border: none;
 
 .modal-content{
     background-color: #252422;
+}
+
+.modal-body{
+    border: 1px solid white;
 }

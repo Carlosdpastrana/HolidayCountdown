@@ -12,6 +12,7 @@ let day
 
 
 function renderHolidayData(holidayData) {
+  modalBody.innerHTML = '';
 console.log(holidayData);
 const holidayInfo = holidayData.response.holidays
 for (let index = 0; index < holidayInfo.length; index++) {
@@ -90,7 +91,21 @@ function updateCountdown(year, month, day) {
   timer = setInterval(updateTimer, 1000);
 }
 
+function setDate () {
+  const storedDate =   localStorage.getItem("date") || "";
+  console.log(storedDate);
+  dateInput.value = storedDate
+}
+
 countdownButton.addEventListener('click', async function () {
+  const storedDate =  localStorage.getItem("date");
+  if (storedDate){
+    const [yearValue, monthValue, dayValue] = storedDate.split("-")
+    year = yearValue
+    month = monthValue
+    day = dayValue
+  }
+
   await getData(year, month, day)
   clearInterval(timer);
   const newModal = new bootstrap.Modal(modal);
@@ -99,6 +114,8 @@ countdownButton.addEventListener('click', async function () {
 });
 
 dateInput.addEventListener('change', function (event) {
+  localStorage.setItem("date", event.target.value);
+
   const [yearValue, monthValue, dayValue] = event.target.value.split('-');
   year = yearValue
   month = monthValue
@@ -109,3 +126,5 @@ window.addEventListener('load', function() {
     const headerH1 = document.querySelector('header > h1');
     headerH1.classList.add('visible');
 });
+
+setDate();

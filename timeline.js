@@ -1,6 +1,8 @@
 const countdownButton = document.getElementById('start-countdown');
 const resetButton = document.getElementById('reset-countdown');
 const dateInput = document.querySelector('#dateInput');
+const modal = document.querySelector('.modal')
+const modalBody = document.querySelector('.modal-body')
 const apiKey = 'rWyh8jYCPFnHKXDecEshw3swHb0gkxlk';
 let timer;
 let year
@@ -11,6 +13,18 @@ let day
 
 function renderHolidayData(holidayData) {
 console.log(holidayData);
+const holidayInfo = holidayData.response.holidays
+for (let index = 0; index < holidayInfo.length; index++) {
+  const info = holidayInfo[index];
+const name = info.name;
+const description = info.description;
+console.log(name,description)
+const nameEl = document.createElement('div')
+const descriptionEl = document.createElement('div')
+nameEl.textContent = name
+descriptionEl.textContent = description
+modalBody.append(nameEl,descriptionEl)
+}
 }
 
 async function getData(year, month, day) {
@@ -79,6 +93,8 @@ function updateCountdown(year, month, day) {
 countdownButton.addEventListener('click', async function () {
   await getData(year, month, day)
   clearInterval(timer);
+  const newModal = new bootstrap.Modal(modal);
+  newModal.show()
   updateCountdown(year, month, day);
 });
 

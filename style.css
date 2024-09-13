@@ -169,3 +169,7 @@ span {
 background-color:rgba(250, 94, 0, 1);
 border: none;
 }
+
+.modal-content{
+    background-color: #252422;
+}

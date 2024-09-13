@@ -1,5 +1,5 @@
 :root {
-    --halloween-font: 'Outfit', sans-serif; color: #403d39;
+    --halloween-font: 'Times New Roman', Times, serif;
     --primary-color: 
 }
 
@@ -12,7 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #fffcf2;
+    background-color: white;
+    
 }
 
 
@@ -62,80 +63,67 @@ header{
     }
 }
 
-div.paragraph{
-    padding: 10px;
-    margin: 23px;
-    align-items: left;
+/*Paragraph belows header*/
+div.paragraph,p{
+    padding: 1px;
+    margin: 2px;
     font-size: 20px;
     text-align: center;
 
 }
 
+
+/* this is for the box that includes the calendar and start countdown button*/
 .container{
-    padding: 20px;
     border-radius: 10px;
-    width: 500px;
-    margin: 20px auto;
     gap: 31px;
     font-family: var(--halloween-font);
     font-weight: bold;
+    margin: 10px;
 }
 
-
-
-.col{
-    font-family: var(--halloween-font);
-    font-weight: bold;
-    padding: 10px;
-    font-size: 1rem;
-    border-color: black;
-    border-radius: 5px;
-    outline: none;
-    width: 100%;
-    margin-bottom: 20px;
+input[type="date"] {
+    width: 250px; 
+    height: 50px;
+    font-size: 1.5rem; 
+    padding: 10px; 
+    border-radius: 40px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-.col-1{
-    font-family: var(--halloween-font);
-    font-weight: bold;
-    padding: 10px;
-    font-size: 1rem;
-    border-color: black;
-    border-radius: 5px;
-    outline: none;
-    width: 100%;
-    margin-bottom: 20px;
-    display: inline;
-}
 
 #start-countdown{
-    padding: 10px 20px;
-    font-size: 12px;
-    background-color: #403d39;
-    color: #fffcf2;
+    font-size: 1.5rem;
+    background-color: #F0F0F0;
+    color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
-    width: max-content;
+    width: 250px;
+    height: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
 }
 
 #start-countdown:hover {
-    background-color:rgb(143, 106, 82);
+    background-color: black;
+    color: #F0F0F0;
     border: none;
 }
 
 
 .container-countdown {
     text-align: center;
-    background-color: #252422;
-    padding: 20px;
-    border-radius: 125px;
+    background-color: #F0F0F0;
+    padding: 68px 20px;
+    border-radius: 261px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     font-family: var(--halloween-font);
-    font-weight: bold;
-    color: #fffcf2;
-    width: 500px;
+    color: black;
+    width: 1337px;
+    font-size: 1rem;
+    margin:  27px;
+    opacity: 1;
     }
     
     .time {
@@ -146,6 +134,8 @@ div.paragraph{
         display: block;
         font-size: 20px;
         margin-top: 5px;
+        color: black;
+        opacity: 1;
     }
 
 
@@ -154,7 +144,8 @@ div.paragraph{
     justify-content: center;
     gap: 10px;
     font-size: 2em;
-    color: #fffcf2;
+    color: black;
+    opacity: 1;
 }
 
 .time div {
@@ -168,10 +159,9 @@ span {
 }
 
 #shareButton{
-    position: fixed;
     border-radius: 100px;
-    background-color: #252422;
-    color: #fffcf2;
+    background-color: #F0F0F0;
+    color: black;
     bottom: 1px;
     right: 45px;
     font-size: 40px;
@@ -181,7 +171,8 @@ span {
 }
 #shareButton:hover{
 
-background-color:rgba(250, 94, 0, 1);
+background-color:#000000;
+color: #F0F0F0;
 border: none;
 }
 

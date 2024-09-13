@@ -38,3 +38,9 @@ countdownButton.addEventListener('click', function() {
 
 // // Initial call to display the countdown immediately
 // updateCountdown();
+
+
+window.addEventListener('load', function() {
+    const headerH1 = document.querySelector('header > h1');
+    headerH1.classList.add('visible');
+});

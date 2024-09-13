@@ -73,9 +73,7 @@ div.paragraph{
 
 .container{
     padding: 20px;
-    background-color: #ccc5b9;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 500px;
     margin: 20px auto;
     gap: 31px;
@@ -97,14 +95,29 @@ div.paragraph{
     margin-bottom: 20px;
 }
 
+
+.col-1{
+    font-family: var(--halloween-font);
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1rem;
+    border-color: black;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline;
+}
+
 #start-countdown{
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 12px;
     background-color: #403d39;
     color: #fffcf2;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: max-content;
 }
 
 #start-countdown:hover {
@@ -119,18 +132,19 @@ div.paragraph{
     padding: 20px;
     border-radius: 125px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-     font-family: var(--halloween-font);
+    font-family: var(--halloween-font);
     font-weight: bold;
     color: #fffcf2;
+    width: 500px;
     }
     
     .time {
         text-align: center;
     }
     
-    .time span.label {
+    .label {
         display: block;
-        font-size: 12px;
+        font-size: 20px;
         margin-top: 5px;
     }
 

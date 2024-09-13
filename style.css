@@ -177,7 +177,8 @@ border: none;
 }
 
 .modal-content{
-    background-color: #252422;
+    background-color: #F0F0F0;
+    color: black;
 }
 
 .modal-body{

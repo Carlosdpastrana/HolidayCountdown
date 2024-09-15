@@ -1,5 +1,8 @@
+## Project Status
+The developement has slowed down. 
+
 ## Holiday Countdown
-A simple streamlined interactive web application that counts down any recognizable international holidays that displays the remaining days, hours, minutes, and seconds until the selected holiday. 
+A interactive web application that counts down any recognizable international holidays that displays the remaining days, hours, minutes, and seconds until the selected holiday. 
 
 ## Installation
   To run this project locally, follow these steps:
@@ -56,7 +59,7 @@ This project is licensed under the ___ License. See the [LICENCE](licence) file 
 
 ## Authors
   Carlos Pastrana [@Carlosdpastrana](https://github.com/Carlosdpastrana)
-  William Fagan [@faga921](https://github.com/fagan921)
+  William Fagan [@fagan921](https://github.com/fagan921)
   Jacob Watson [@JakeStair](https://github.com/JakeStair)
   Martha Watson [Elementary-my-dear-Watson](https://github.com/Elementary-my-dear-Watson)
 

@@ -20,7 +20,7 @@ Once the project is running:
   
   ## Demo
 You can view the live demo of the project here: Holiday Coundown Demo
-Demo link:
+Demo link: https://carlosdpastrana.github.io/HolidayCountdown/
 [Screenshot example:](ready-for-a-holdiay.png)
 
 ## Features
